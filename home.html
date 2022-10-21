@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <script src="docs/assets/vendors/jquery.min.js"></script>
+    <script src="docs/assets/owlcarousel/owl.carousel.js"></script>
+    <!-- Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="docs/assets/css/docs.theme.min.css">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+
+    <style>
+        .screenfull {
+            width: 100%;
+            height: 90vh;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: black;
+            background-color: white;
+        }
+
+        .header {
+            background-color: #3448ce00;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .img_logo {
+            width: 150px;
+            padding: 15px;
+        }
+
+        .img1 {
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        .pad1 {
+            padding: 100px 0px;
+        }
+
+        .historia {
+            background-color: #3449CE;
+            color: white;
+        }
+
+        .industriais {
+            background-color: #3449CE;
+            color: white;
+        }
+
+        .features {
+            flex-direction: row;
+        }
+
+        .features p {
+            margin: 20px;
+            color: white;
+        }
+
+        .md8-bg {
+            background-image: url("assets/bg-1.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y: top;
+        }
+
+        .home {
+            height: 90vh;
+            gap: 100px;
+        }
+
+        .hometext {
+            padding-bottom: 180px;
+        }
+
+        .home h1 {
+            font-weight: 1000;
+            color: white;
+        }
+
+        .home p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body_wrapper md8-bg">
+        <header class="header d-flex">
+            <div class="justify-content-center d-flex">
+                <img class="img_logo" src="assets/logo_branca.png" alt="">
+            </div>
+            <div class="justify-content-center d-flex features">
+                <div class="d-flex">
+                    <p>MÁQUINAS</p>
+                    <p>FILMES TÉCNICOS</p>
+                    <p>DATADORES</p>
+                    <p>ETIQUETAS</p>
+                    <p>RÓTULOS</p>
+                    <p>PALETIZAÇÃO</p>
+                </div>
+            </div>
+        </header>
+        <section class="home d-flex justify-content-center pad1">
+            <div class="d-flex flex-column justify-content-center col-lg-3 hometext">
+                <h1>
+                    Grupo MD8
+                </h1>
+                <p class="mt-3">
+                    Através de nossos parceiros, a MD8 tem uma proposta para cada perfil de consumo! Não se preocupe,
+                    estamos preparados para atender desde as primeiras embalagens até empresas já consolidadas no
+                    mercado. <strong>Nossa especialidade, é resolver o seu problema com embalagem!
+                    </strong>
+                </p>
+            </div>
+            <div class="col-lg-5 d-flex flex-column justify-content-center">
+                <div class="row">
+                    <div class="columns">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img class="img1" src="assets/placeholder.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img1" src="assets/filmes.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img1" src="assets/datadores.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img1" src="assets/etiquetas.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img1" src="assets/rotulos.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img1" src="assets/paletizacao.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            var owl = $('.owl-carousel');
+                            owl.owlCarousel({
+                                dots: false,
+                                items: 1,
+                                loop: true,
+                                margin: 10,
+                                autoplay: true,
+                                autoplaySpeed: 500,
+                                autoplayTimeout: 4000,
+                                autoplayHoverPause: true
+                            });
+                            $('.play').on('click', function () {
+                                owl.trigger('play.owl.autoplay', [1000])
+                            })
+                            $('.stop').on('click', function () {
+                                owl.trigger('stop.owl.autoplay')
+                            })
+                        })
+                    </script>
+                </div>
+            </div>
+        </section>
+        <section class="historia d-flex screenfull pad1 justify-content-around">
+            <div class="col-lg-4 d-flex flex-column justify-content-center">
+                <img class="img1" src="assets/placeholder.jpg" alt="">
+            </div>
+            <div class="col-lg-4 d-flex flex-column justify-content-center">
+                <h1>O inicio</h1>
+                <p class="mt-3">A história do grupo MD8 começa em maio de 1995 com a entrada de Mucio Duarte, sócio
+                    fundador, no mercado de embalagens flexíveis. Juntamente com Scheyla Duarte, sua esposa e sócia,
+                    começou a representar renomadas empresas do setor. Tecidos Líder, Plast-nor, Amazonas, Fitas Flax,
+                    Nordeste Plásticos, Resinorte, Sacoplast Brasil, e outras ligadas ao seguimento, são algumas das
+                    empresas com as quais a MD Representações começou sua história no mundo das embalagens.</p>
+            </div>
+        </section>
+        <section class="representacoes d-flex justify-content-around pad1 screenfull">
+            <div class="col-lg-4 d-flex flex-column justify-content-center">
+                <h1>
+                    MD8 Representações
+                </h1>
+                <p class="mt-3">
+                    A antes intitulada MD Representações foi a primeira empresa do grupo, encontrando o início do
+                    surgimento de novas demandas, que mais tarde seriam o ponta pé inicial para criação dos diversos
+                    nichos de produtos e serviços hoje oferecidos pelo grupo. Oferecendo produtos voltados para vendas
+                    de maior volume, se torna interessante fazer compras faturados diretamente do fabricante, onde nos
+                    encarregamos de fazer a ponte de informações entre a fábrica e o cliente.
+                    Para cada demanda, rigor de qualidade e tipo de produto, tem uma representada que se encaixa melhor
+                    na operação. Nossos especialistas estão prontos para guiar o processo de compra, garantindo o melhor
+                    preço e volume para a realidade do seu negócio.
+
+                </p>
+            </div>
+            <div class="col-lg-4 d-flex flex-column justify-content-center">
+                <img class="img1" src="assets/placeholder.jpg" alt="">
+            </div>
+        </section>
+        <section class="industriais d-flex screenfull pad1 justify-content-around">
+            <div class="col-lg-4 d-flex flex-column justify-content-center">
+                <img class="img1" src="assets/placeholder.jpg" alt="">
+            </div>
+            <div class="col-lg-4 d-flex flex-column justify-content-center">
+                <h1>MD8 Embalagens Industriais</h1>
+                <p class="mt-3">A MD8 Embalagens conta com estoque local de alguns produtos de nossas representadas,
+                    atendendo sua carteira de clientes com pequenos e médios volumes, de forma que atenda à necessidade
+                    das indústrias parceiras. Em 2013 com o apoio da M3 Media Digital, a MD8 investe em uma ferramenta
+                    poderosa de atendimento ao cliente; além da loja virtual, toda a operação é acompanhada pelo cliente
+                    online facilitando o fluxo de informações durante o tramite dos pedidos até a entrega no destino.
+                    Isso faz com que nossa fiel clientela confie na eficiência de nosso trabalho e nos leva a crer que
+                    nossa equipe está preparada para esses novos desafios de levar a nossos clientes SOLUÇÃO em
+                    embalagem com preço mais COMPETITIVO e com o máximo de QUALIDADE nos produtos e serviços. </p>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

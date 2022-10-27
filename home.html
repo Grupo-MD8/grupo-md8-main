@@ -20,6 +20,13 @@
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="docs/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28e5ec974a.js" crossorigin="anonymous"></script>
+
 
 
     <style>
@@ -33,6 +40,7 @@
             padding: 0;
             color: black;
             background-color: white;
+            font-family: 'Roboto', sans-serif;
         }
 
         .header {
@@ -51,18 +59,20 @@
             border-radius: 10px;
         }
 
+        .img2 {
+            width: 100%;
+            border-radius: 10px;
+        }
+
         .pad1 {
             padding: 50px 0px;
         }
 
-        .historia {
-            background-color: #3449CE;
-            color: white;
-        }
-
-        .industriais {
-            background-color: #3449CE;
-            color: white;
+        .bgwhite {
+            background-image: url("assets/bg2-01.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y: top;
         }
 
         .features {
@@ -81,6 +91,23 @@
             background-position-y: top;
         }
 
+        .md8-bg h1 {
+            color: white;
+        }
+
+        .md8-bg p {
+            color: white;
+        }
+
+        .bgwhite h1 {
+            color: rgb(37, 37, 37);
+        }
+
+        .bgwhite p {
+            color: rgb(37, 37, 37);
+        }
+
+
         .home {
             height: 90vh;
             gap: 100px;
@@ -88,17 +115,32 @@
         }
 
         .hometext {
-            padding-bottom:40px;
+            padding-bottom: 40px;
         }
 
-        .home h1 {
+        .body_wrapper h1 {
             font-weight: 1000;
-            color: white;
             margin-bottom: 0px;
         }
 
         .home p {
             color: white;
+        }
+
+        .home h1 {
+            color: white;
+        }
+        .md8-bg a {
+            color: white;
+        }
+        .md8-bg li {
+            color: white;
+        }
+        .md8-bg h2 {
+            color: white;
+        }
+        .icone_footer {
+            font-size: 25px;
         }
     </style>
 </head>
@@ -120,7 +162,7 @@
                 </div>
             </div>
         </header>
-        <section class="home d-flex justify-content-center pad1">
+        <section id="home" class="home d-flex justify-content-center pad1">
             <div class="d-flex flex-column justify-content-center col-lg-3 hometext">
                 <h1>
                     Grupo MD8
@@ -180,57 +222,109 @@
                 </div>
             </div>
         </section>
-        <section class="historia d-flex screenfull pad1 justify-content-around">
+        <section id="inicio" class="bgwhite d-flex screenfull pad1 justify-content-around">
             <div class="col-lg-4 d-flex flex-column justify-content-center">
-                <img class="img1" src="assets/placeholder.jpg" alt="">
+                <img class="img2" src="assets/placeholder.jpg" alt="">
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center">
-                <h1>O inicio</h1>
+                <h1>O início</h1>
                 <p class="mt-3">A história do grupo MD8 começa em maio de 1995 com a entrada de Mucio Duarte, sócio
                     fundador, no mercado de embalagens flexíveis. Juntamente com Scheyla Duarte, sua esposa e sócia,
-                    começou a representar renomadas empresas do setor. Tecidos Líder, Plast-nor, Amazonas, Fitas Flax,
-                    Nordeste Plásticos, Resinorte, Sacoplast Brasil, e outras ligadas ao seguimento, são algumas das
-                    empresas com as quais a MD Representações começou sua história no mundo das embalagens.</p>
+                    começou a representar renomadas empresas do setor.</p>
+                <p><strong>Tecidos Líder, Plast-nor, Amazonas, Fitas Flax,
+                        Nordeste Plásticos, Resinorte, Sacoplast Brasil,</strong> e outras ligadas ao seguimento, são
+                    algumas das
+                    empresas com as quais a <strong>MD Representações</strong> começou sua história no mundo das
+                    embalagens.</p>
             </div>
         </section>
-        <section class="representacoes d-flex justify-content-around pad1 screenfull">
+        <section id="representacoes" class="md8-bg d-flex justify-content-around pad1 screenfull">
             <div class="col-lg-4 d-flex flex-column justify-content-center">
                 <h1>
                     MD8 Representações
                 </h1>
                 <p class="mt-3">
-                    A antes intitulada MD Representações foi a primeira empresa do grupo, encontrando o início do
+                    A antes intitulada <strong>MD Representações</strong> foi a primeira empresa do grupo, encontrando o
+                    início do
                     surgimento de novas demandas, que mais tarde seriam o ponta pé inicial para criação dos diversos
-                    nichos de produtos e serviços hoje oferecidos pelo grupo. Oferecendo produtos voltados para vendas
-                    de maior volume, se torna interessante fazer compras faturados diretamente do fabricante, onde nos
-                    encarregamos de fazer a ponte de informações entre a fábrica e o cliente.
-                    Para cada demanda, rigor de qualidade e tipo de produto, tem uma representada que se encaixa melhor
+                    nichos de produtos e serviços hoje oferecidos pelo grupo.</p>
+
+                <p>Oferecendo produtos voltados para <strong>vendas
+                        de maior volume,</strong> se torna interessante fazer compras faturados diretamente do
+                    fabricante, onde nos
+                    encarregamos de fazer a ponte de informações entre a fábrica e o cliente.</p>
+
+                <p>Para cada demanda, rigor de qualidade e tipo de produto, tem uma representada que se encaixa melhor
                     na operação. Nossos especialistas estão prontos para guiar o processo de compra, garantindo o melhor
                     preço e volume para a realidade do seu negócio.
-
                 </p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center">
-                <img class="img1" src="assets/placeholder.jpg" alt="">
+                <img class="img2" src="assets/placeholder.jpg" alt="">
             </div>
         </section>
-        <section class="industriais d-flex screenfull pad1 justify-content-around">
+        <section id="embalagens" class="bgwhite d-flex screenfull pad1 justify-content-around">
             <div class="col-lg-4 d-flex flex-column justify-content-center">
-                <img class="img1" src="assets/placeholder.jpg" alt="">
+                <img class="img2" src="assets/placeholder.jpg" alt="">
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center">
                 <h1>MD8 Embalagens Industriais</h1>
-                <p class="mt-3">A MD8 Embalagens conta com estoque local de alguns produtos de nossas representadas,
-                    atendendo sua carteira de clientes com pequenos e médios volumes, de forma que atenda à necessidade
-                    das indústrias parceiras. Em 2013 com o apoio da M3 Media Digital, a MD8 investe em uma ferramenta
-                    poderosa de atendimento ao cliente; além da loja virtual, toda a operação é acompanhada pelo cliente
-                    online facilitando o fluxo de informações durante o tramite dos pedidos até a entrega no destino.
+                <p class="mt-3">A <strong>MD8 Embalagens</strong> conta com estoque local de alguns produtos de nossas
+                    representadas,
+                    atendendo sua carteira de <strong>clientes com pequenos e médios volumes,</strong> de forma que
+                    atenda à necessidade
+                    das indústrias parceiras.</p>
+                <p> Em 2013 com o apoio da M3 Media Digital, a MD8 investe em uma ferramenta
+                    poderosa de atendimento ao cliente; além da loja virtual, <strong>toda a operação é acompanhada pelo
+                        cliente
+                        online</strong> facilitando o fluxo de informações durante o tramite dos pedidos até a entrega
+                    no destino.</p>
+                <p>
                     Isso faz com que nossa fiel clientela confie na eficiência de nosso trabalho e nos leva a crer que
-                    nossa equipe está preparada para esses novos desafios de levar a nossos clientes SOLUÇÃO em
-                    embalagem com preço mais COMPETITIVO e com o máximo de QUALIDADE nos produtos e serviços. </p>
+                    nossa equipe está preparada para esses novos desafios de levar a nossos clientes
+                    <strong>SOLUÇÃO</strong> em
+                    embalagem com preço mais <strong>COMPETITIVO</strong> e com o máximo de <strong>QUALIDADE</strong>
+                    nos produtos e serviços.
+                </p>
             </div>
         </section>
-
+        <footer class="md8-bg d-flex justify-content-center align-items-start pad1">
+            <div class="container row justify-content-around">
+                <div class="col-lg-4">
+                    <a href="">
+                        <img class="img_logo" src="assets/logo_branca.png" alt="" />
+                    </a>
+                    <p>© 2022 Grupo MD8.</p>
+                    <p>Todos os direitos reservados.</p>
+                    <div class="foot-icon-class">
+                        <a class="foot-icon icone_footer" href=""><i class="fa-brands fa-instagram-square"></i></a>
+                        <a class="foot-icon icone_footer" href=""><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Produtos</h2>
+                    <ul class="list-unstyled">
+                        <li>Máquinas</li>
+                        <li>Filmes técnicos</li>
+                        <li>Datadores</li>
+                        <li>Etiquetas</li>
+                        <li>Rótulos</li>
+                        <li>Paletização</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 phonemb100">
+                    <h2>Contato</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="">Suporte</a>
+                        </li>
+                        <li>
+                            <a href="">email: grupomd8@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

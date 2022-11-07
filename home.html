@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo MD8</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
@@ -26,8 +26,6 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/28e5ec974a.js" crossorigin="anonymous"></script>
-
-
 
     <style>
         .screenfull {
@@ -130,17 +128,99 @@
         .home h1 {
             color: white;
         }
+
         .md8-bg a {
             color: white;
         }
+
         .md8-bg li {
             color: white;
         }
+
         .md8-bg h2 {
             color: white;
         }
+
         .icone_footer {
             font-size: 25px;
+        }
+
+        .pc-display {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 600px) {
+            .features {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .md8-bg {
+                background-image: url("assets/bg-01.png");
+                background-repeat: no-repeat;
+                background-size: 500%;
+                background-position-y: top;
+                text-align: center;
+            }
+
+            .phone-display {
+                display: none !important;
+            }
+
+            .pc-display {
+                display: unset !important;
+            }
+
+            .home {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .home h1 {
+                margin-top: unset;
+            }
+
+            .phone-column {
+                flex-direction: column;
+            }
+
+            .phone-reverse {
+                flex-direction: column-reverse;
+            }
+
+            .phone-pad {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .bgwhite {
+                background-image: url("assets/bg2-01.png");
+                background-repeat: no-repeat;
+                background-size: 500%;
+                background-position-y: top;
+                text-align: center;
+            }
+
+            .phone-home {
+                margin-top: -100px;
+            }
+
+            .inicio {
+                height: fit-content;
+            }
+
+            .inicio h1 {
+                margin-top: unset;
+            }
+
+            .representacoes {
+                height: fit-content;
+            }
+            .embalagens {
+                height: fit-content;
+            }
+
+
         }
     </style>
 </head>
@@ -152,7 +232,7 @@
                 <img class="img_logo" src="assets/logo_branca.png" alt="">
             </div>
             <div class="justify-content-center d-flex features">
-                <div class="d-flex">
+                <div class="d-flex features">
                     <p>MÁQUINAS</p>
                     <p>FILMES TÉCNICOS</p>
                     <p>DATADORES</p>
@@ -162,7 +242,7 @@
                 </div>
             </div>
         </header>
-        <section id="home" class="home d-flex justify-content-center pad1">
+        <section id="home" class="home d-flex justify-content-center pad1 phone-pad">
             <div class="d-flex flex-column justify-content-center col-lg-3 hometext">
                 <h1>
                     Grupo MD8
@@ -174,7 +254,7 @@
                     </strong>
                 </p>
             </div>
-            <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <div class="col-lg-5 d-flex flex-column justify-content-center phone-display">
                 <div class="row">
                     <div class="columns">
                         <div class="owl-carousel owl-theme">
@@ -218,8 +298,12 @@
                     </script>
                 </div>
             </div>
+            <div class="col-lg-4 d-flex flex-column justify-content-center pc-display phone-home">
+                <img class="img2" src="assets/datadores.png" alt="">
+            </div>
         </section>
-        <section id="inicio" class="bgwhite d-flex screenfull pad1 justify-content-around">
+        <section id="inicio"
+            class="bgwhite d-flex screenfull pad1 justify-content-around phone-column phone-reverse phone-pad inicio">
             <div class="col-lg-4 d-flex flex-column justify-content-center">
                 <img class="img2" src="assets/inicio.jpg" alt="">
             </div>
@@ -235,7 +319,8 @@
                     embalagens.</p>
             </div>
         </section>
-        <section id="representacoes" class="md8-bg d-flex justify-content-around pad1 screenfull">
+        <section id="representacoes"
+            class="md8-bg d-flex justify-content-around pad1 screenfull phone-column phone-pad representacoes">
             <div class="col-lg-4 d-flex flex-column justify-content-center">
                 <h1>
                     MD8 Representações
@@ -260,7 +345,8 @@
                 <img class="img2" src="assets/representacoes.jpg" alt="">
             </div>
         </section>
-        <section id="embalagens" class="bgwhite d-flex screenfull pad1 justify-content-around">
+        <section id="embalagens"
+            class="bgwhite d-flex screenfull pad1 justify-content-around phone-reverse phone-pad embalagens">
             <div class="col-lg-4 d-flex flex-column justify-content-center">
                 <img class="img2" src="assets/placeholder.jpg" alt="">
             </div>
